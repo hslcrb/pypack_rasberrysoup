@@ -1,64 +1,43 @@
-# 🌐 HSLCRB VCPKG Registry Hub
+# 🍧 Rasberrysoup
 
-![Registry Hub Banner](registry_hub_banner.png)
+![Rasberrysoup Logo](assets/logo.png)
 
-> **The Central Pulse for HSLCRB C++ Ecosystem**
+**Rasberrysoup** is a professional Python library designed to simplify complex mathematical operations into intuitive keyword-based function calls. Originally a C++ library, it has been reimagined and ported to Python to provide high-performance implementations for common engineering and scientific tasks.
 
-Welcome to the **HSLCRB Registry Hub**, a specialized vcpkg git registry curated by **Rheehose (Rhee Creative)**. This repository serves as a professional "Package Store" for high-quality C++ libraries, enabling seamless dependency management and rapid deployment.
+## ✨ Key Features
 
----
+- **Quadratic Solver (`quad`)**: Solve $ax^2 + bx + c = 0$ with complex root support.
+- **Golden Ratio (`gold`)**: High-precision constant for aesthetic and mathematical design.
+- **Fourier Transform (`fourier`)**: Simplified discrete transform for signal analysis.
+- **Euclidean Distance (`dist`)**: Multi-dimensional distance calculations.
+- **Compound Interest (`interest`)**: Fast financial growth modeling.
 
-## 📦 Featured Packages
+## 🚀 Installation
 
-Our registry continuously grows with purpose-built libraries for engineering, mathematics, and UI development.
+You can install Rasberrysoup directly from the source:
 
-| Package | Status | Description |
-| :--- | :--- | :--- |
-| [**Rasberrysoup**](./ports/rasberrysoup) | `v1.0.0` | 🍧 High-performance math keyword library. |
-| [**Simplebrowse**](./ports/simplebrowse) | `v1.0.0` | 🌐 Premium C/GTK3 mini browser. |
-| *UI Frame* | `Coming Soon` | Modern glassmorphic interface components. |
-
----
-
-## 🚀 How to Sync Your Project
-
-To integrate our professional tools into your C++ project, simply register this hub in your `vcpkg-configuration.json` file.
-
-### 1. Register the Hub
-```json
-{
-  "registries": [
-    {
-      "kind": "git",
-      "repository": "https://github.com/hslcrb/vcpkg_hslcrb-s_pkgs",
-      "packages": [ "rasberrysoup", "simplebrowse" ]
-    }
-  ]
-}
-```
-
-### 2. Deploy
-Use the standard vcpkg command to pull any package from our hub:
 ```bash
-vcpkg install <package-name>
+pip install .
+```
+
+## 🔧 Usage
+
+```python
+from rasberrysoup import quad, gold, dist
+
+# 1. Golden Ratio
+print(f"Golden Ratio: {gold()}")
+
+# 2. Quadratic Solver (x^2 - 5x + 6 = 0)
+roots = quad(1, -5, 6)
+print(f"Roots: {roots}")
+
+# 3. Distance Calculation
+d = dist([0, 0], [3, 4])
+print(f"Distance: {d}")
 ```
 
 ---
-
-## 🏛️ Repository Architecture
-
-This hub is built on the official [vcpkg Registry Specification](https://learn.microsoft.com/en-us/vcpkg/concepts/registries), ensuring maximum compatibility and reliability.
-
-- `/ports`: Detailed build instructions and metadata for each package.
-- `/versions`: A robust database for version tracking and binary stability.
-- `CONTRIBUTING.md`: Workflow for adding or updating packages.
-
----
-
-## 🤝 Contribution & Governance
-Managed by **Rheehose (Rhee Creative)**. We uphold the highest standards of code quality and documentation. See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
-
----
-
-**© 2008-2026 Rheehose (Rhee Creative). All Rights Reserved.**
-Distributed under the **MIT License**.
+**Author:** Rheehose (Rhee Creative)
+**Copyright:** © 2008-2026
+**License:** MIT

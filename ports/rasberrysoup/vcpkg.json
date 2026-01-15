@@ -1,8 +1,0 @@
-{
-  "name": "rasberrysoup",
-  "version": "1.0.0",
-  "description": "A C++ library for simplifying complex mathematical formulas with simple keyword calls.",
-  "homepage": "https://github.com/hslcrb/Rasberrysoup",
-  "maintainer": "Rheehose (Rhee Creative)",
-  "license": "MIT"
-}

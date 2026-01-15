@@ -8,8 +8,8 @@ This document outlines the process for contributing to the **Rasberrysoup** Pyth
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/hslcrb/vcpkg_hslcrb-s_pkgs.git
-   cd vcpkg_hslcrb-s_pkgs
+   git clone https://github.com/hslcrb/pypack_rasberrysoup.git
+   cd pypack_rasberrysoup
    ```
 
 2. **Install in editable mode:**
